@@ -9,6 +9,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/* common */
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
 /* header */
 
 header{
@@ -42,6 +50,16 @@ main{
     width: 100%;
 }
 
+.container_album{
+    width: calc(100% - 150px);
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    border: 1px solid brown;
+}
+
+/* sidebar */
 
 .side_bar{
     width: 150px;
@@ -80,7 +98,3 @@ i.fas.fa-user-circle{
 }
 
 
-.container_album{
-    width: calc(100% - 150px);
-    border: 1px solid brown;
-}
