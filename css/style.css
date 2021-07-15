@@ -29,6 +29,7 @@ h6{
 p{
     color: grey;
 }
+
 /* header */
 
 header{
@@ -191,3 +192,25 @@ footer i{
     font-size: 30px;
 
 }
+
+/* @media screen and (max-width: 1100px){
+    .card{
+        width: calc(100% / 5 );
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .card{
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .side_bar{
+
+    }
+    .side_bar_mid{
+        display: none;
+    }
+} */
