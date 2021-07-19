@@ -59,6 +59,10 @@ header nav{
     color: white;
 }
 
+.btn:hover{
+    transform: scale(1.1, 1.1);
+}
+
 /* Main */
 
 main{
@@ -120,6 +124,25 @@ main{
     background-color: greenyellow;
 }
 
+.img_card{
+    position: relative;
+}
+.img_card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+
+
+}
+
+.container_album nav ul li a:hover{
+    color: white;
+}
+
 /* sidebar */
 
 .side_bar{
@@ -140,6 +163,10 @@ main{
     flex-grow: 2;
     overflow-y: auto;
 
+}
+.logo_hidden{
+    display: none;
+    width: 20px;
 }
 
 .firstwhite{
@@ -165,8 +192,13 @@ ul li i{
     color: white;
 }
 
+
 .footer_side_nav > i{
     color: grey;
+}
+
+.white{
+    color: white;
 }
 
 i.fas.fa-user-circle{
@@ -178,6 +210,19 @@ i.fas.fa-user-circle{
     border: 1px solid grey;
     margin: 5px 0px;
 }
+
+.side_bar ul li a:hover{
+    color: white;
+}
+
+.side_bar_mid ul li a i:hover{
+    color: white;
+}
+
+.footer_side_nav a span:hover{
+    color: white;
+}
+
 
 /* footer */
 
@@ -219,8 +264,8 @@ footer i{
 }
 
 
-.footer_middle i:nth-child(3) {
-    font-size: 30px;
+.footer_middle a:nth-child(3) {
+    font-size: 25px;
 
 }
 
@@ -228,6 +273,24 @@ footer i{
     padding: 0px 10px;
 
 }
+
+.fa-play-circle:hover{
+    transform: scale(1.5, 1.5);
+    
+}
+
+.song_name a p:hover{
+    color: white;
+}
+
+.footer_left a i:hover{
+    color: white;
+}
+
+
+
+/* mediaquery */
+
 
  @media screen and (max-width: 1100px){
       .card{
@@ -244,13 +307,26 @@ footer i{
 }
 
 @media screen and (max-width: 600px){
-    .side_bar{
-
+    .side_bar img{
+        padding: 0;
     }
-    .side_bar_mid{
+    ul li{
+        padding-bottom: 0px;
+    }
+    ul li i{
+        padding-bottom: 0px;
+    }
+    .side_bar_mid ul{
         display: none;
     }
     .no_600{
         display: none;
     }
+    .logo_show{
+        display: none;
+    }
+    .logo_hidden{
+        display: block;
+    }
+
 }
