@@ -83,6 +83,7 @@ main{
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 
@@ -91,10 +92,8 @@ main{
     flex-wrap: wrap;
 }
 .card{
-    display: flex;
     width: calc(100% / 6);
     justify-content: center;
-    object-fit: cover;
     overflow: hidden;
     text-align: center;
     padding: 10px;
@@ -140,9 +139,7 @@ main{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-
-
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .container_album nav ul li a:hover{
@@ -177,6 +174,7 @@ main{
 
 .firstwhite{
     color: white;
+    border-left: 1px solid green;
 }
 
 .fa-home{
@@ -213,7 +211,7 @@ i.fas.fa-user-circle{
 
 .line_block{
     width: 100%;
-    border: 1px solid grey;
+    border: 1px solid rgb(0, 0, 0);
     margin: 5px 0px;
 }
 
@@ -238,12 +236,26 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+}
+
+.footer_right{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+#container_middle_footer{
+    text-align: center;
+}
+
+.footer_middle{
+    width: 60%;
 }
 
 .footer_left{
+    width: 20%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -293,6 +305,30 @@ footer i{
     color: white;
 }
 
+/* .footer_middle{
+    display: flex;
+} */
+
+.barsong_bright{
+ width: 70%;
+ border: 1px solid grey;
+}
+
+.barsong_dark{
+    width: 30%;
+    border: 1px solid green;
+
+}
+
+.song_settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.son_time{
+    display: inline-block;
+}
 
 
 /* mediaquery */
@@ -333,6 +369,12 @@ footer i{
     }
     .logo_hidden{
         display: block;
+    }
+    .side_bar{
+        width: 30px;
+    }
+    .container_album{
+        width: calc(100vh - 30px);
     }
 
 }
