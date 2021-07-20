@@ -74,7 +74,6 @@ main{
 .container_album{
     width: calc(100% - 150px);
     overflow-y: auto;
-    flex: wrap;
     padding-top: 70px;
     color: white;
 }
@@ -106,6 +105,7 @@ main{
 
 .circle{
     border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -236,6 +236,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 .footer_right{
@@ -255,7 +257,6 @@ footer{
 .footer_left{
     width: 20%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -305,10 +306,6 @@ footer i{
     color: white;
 }
 
-/* .footer_middle{
-    display: flex;
-} */
-
 .barsong_bright{
  width: 70%;
  border: 1px solid grey;
@@ -326,8 +323,11 @@ footer i{
     justify-content: center;
 }
 
-.son_time{
-    display: inline-block;
+.song_time{
+    color: white;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
